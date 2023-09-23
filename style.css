@@ -1,3 +1,71 @@
 h2 {
     text-align: center;
   }
+
+  #app {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%; /* You can adjust the width as needed */
+  }
+
+  .done {
+    text-decoration: line-through;
+    color: #ec3023;
+    
+  }
+
+  #todoInput {
+    text-align: center;
+      width: 30%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #2338ec;
+      border-radius: 5px;
+      
+    }
+  
+    /* CSS for the input placeholder text */
+    #todoInput::placeholder {
+      color: #626d9a;
+    }
+  
+    #center-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+  
+    /* Optional: Add styling to the <ul> element */
+    #taskList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+
+    }
+
+  
+    /* Custom styles for the delete button */
+    .delete-button {
+      background-color: red; /* Red background color */
+      color: white; /* Text color */
+      width: 20px; /* Set a fixed width to make it a square */
+      height: 25px; /* Set a fixed height to make it a square */
+      padding: 0; /* Remove padding */
+      border: none; /* Remove border */
+      cursor: pointer; /* Change cursor on hover */
+      margin-left: 8px; /* Add some spacing between the delete button and text */
+    }
+  
+  /* Hover effect for the delete button */
+  .delete-button:hover {
+      background-color: darkred; /* Darker red on hover */
+    }
+  
+   
+  
+  
+
+  
