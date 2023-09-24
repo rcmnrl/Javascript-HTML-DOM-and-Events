@@ -2,15 +2,25 @@ h2 {
     text-align: center;
   }
 
+  body {
+    background-image: url('luffy.jpg'); /* Replace 'background.jpg' with your image file path */
+    background-size: cover; /* This will cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the image fixed as the page scrolls */
+    /* You can adjust other properties like background-position if needed */
+}
+
   #app {
     text-align: center;
     margin: 0 auto;
     width: 50%; 
+    
   }
 
   .done {
     text-decoration: line-through;
     color: #ec3023;
+    
     
   }
 
@@ -21,12 +31,15 @@ h2 {
       font-size: 16px;
       border: 1px solid #2338ec;
       border-radius: 5px;
+      height: 40px; 
       
     }
   
    
     #todoInput::placeholder {
       color: #626d9a;
+      flex:1;
+      
     }
   
     #center-container {
@@ -35,6 +48,7 @@ h2 {
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+  
     }
   
    
@@ -43,9 +57,11 @@ h2 {
       padding: 0;
       margin: 0;
       text-align: center;
+      border:none;
+
+     
 
     }
-
   
     .delete-button {
       background-color: red; 
@@ -56,14 +72,24 @@ h2 {
       border: none;
       cursor: pointer; 
       margin-left: 8px; 
+      
     }
 
   .delete-button:hover {
       background-color: darkred;
     }
-  
-   
-  
+
+    li {
+      display: flex;
+
+      padding: 0;
+      justify-content: right;
+      position: relative;
+      line-height: 180%;
+padding-right: 50%;
+ 
+  }
+ 
   
 
   

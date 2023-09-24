@@ -12,6 +12,7 @@ function createTaskItem(text) {
 
     const textSpan = document.createElement("span");
   textSpan.textContent = text;
+  
 
   newTaskItem.appendChild(textSpan);
    
